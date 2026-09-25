@@ -1,16 +1,22 @@
-# React + Vite
+oshigoto-backend（バックエンド側）
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+概要 「推しのスケジュール管理アプリ」のAPIサーバーです。
 
-Currently, two official plugins are available:
+主な使用技術
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Language: Java
+Framework: Spring Boot
+Database: PostgreSQL
+Environment: Docker
+ER図（データベース設計） 
+<img width="527" height="508" alt="スクリーンショット 2026-09-23 034947" src="https://github.com/user-attachments/assets/6b8038f0-e134-4452-85a6-dca30e9da984" />
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ローカル環境での起動方法
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+必要環境: Docker Desktop, Git
+起動手順:
+リポジトリをクローンするため、ターミナルで git clone <バックエンドのGitHubリポジトリのURL> を実行します。
+クローンしたプロジェクトのフォルダに移動するため、cd oshigoto-backend を実行します。
+Docker環境でコンテナを起動するため、docker compose up -d を実行します。
+上記の手順を実行することで、ローカル環境上でAPIサーバーとデータベースが起動します。
